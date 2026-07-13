@@ -1,0 +1,208 @@
+<title>新北住辦出租評估｜20坪±｜2026-07-13</title>
+<style>
+  :root{
+    --bg:#F4F6F8; --card:#FFFFFF; --ink:#17222B; --muted:#64707C;
+    --line:#E1E6EA; --accent:#0E7A6E; --accent-soft:rgba(14,122,110,.10);
+    --accent-line:rgba(14,122,110,.35); --warn:#9A6210; --warn-soft:rgba(154,98,16,.10);
+    --dim:#8B959E;
+  }
+  @media (prefers-color-scheme: dark){
+    :root{
+      --bg:#10161C; --card:#19212A; --ink:#E8EDF2; --muted:#93A0AC;
+      --line:#26303A; --accent:#3CC5B0; --accent-soft:rgba(60,197,176,.12);
+      --accent-line:rgba(60,197,176,.40); --warn:#E0A54A; --warn-soft:rgba(224,165,74,.12);
+      --dim:#5E6B76;
+    }
+  }
+  :root[data-theme="dark"]{
+    --bg:#10161C; --card:#19212A; --ink:#E8EDF2; --muted:#93A0AC;
+    --line:#26303A; --accent:#3CC5B0; --accent-soft:rgba(60,197,176,.12);
+    --accent-line:rgba(60,197,176,.40); --warn:#E0A54A; --warn-soft:rgba(224,165,74,.12);
+    --dim:#5E6B76;
+  }
+  :root[data-theme="light"]{
+    --bg:#F4F6F8; --card:#FFFFFF; --ink:#17222B; --muted:#64707C;
+    --line:#E1E6EA; --accent:#0E7A6E; --accent-soft:rgba(14,122,110,.10);
+    --accent-line:rgba(14,122,110,.35); --warn:#9A6210; --warn-soft:rgba(154,98,16,.10);
+    --dim:#8B959E;
+  }
+  *{box-sizing:border-box}
+  body{
+    margin:0; background:var(--bg); color:var(--ink);
+    font-family:"Segoe UI","Microsoft JhengHei","PingFang TC","Noto Sans TC",system-ui,sans-serif;
+    line-height:1.6;
+  }
+  .wrap{max-width:920px; margin:0 auto; padding:40px 20px 56px}
+  header h1{font-size:1.5rem; margin:0 0 6px; letter-spacing:.01em; text-wrap:balance}
+  .sub{color:var(--muted); font-size:.9rem; margin:0 0 14px}
+  .chips{display:flex; flex-wrap:wrap; gap:8px; margin:0 0 10px}
+  .chip{
+    font-size:.78rem; padding:3px 10px; border-radius:999px;
+    background:var(--accent-soft); color:var(--accent); border:1px solid var(--accent-line);
+    letter-spacing:.03em;
+  }
+  .summary{
+    font-size:.92rem; color:var(--muted); border-left:3px solid var(--accent);
+    padding:6px 0 6px 14px; margin:18px 0 26px;
+  }
+  .summary b{color:var(--ink); font-variant-numeric:tabular-nums}
+  .grid{display:grid; grid-template-columns:1fr; gap:14px}
+  @media (min-width:720px){ .grid{grid-template-columns:1fr 1fr} }
+  .card{
+    background:var(--card); border:1px solid var(--line); border-radius:10px;
+    padding:18px 18px 16px; display:flex; flex-direction:column; gap:10px;
+  }
+  .card.best{border-color:var(--accent-line); box-shadow:0 0 0 1px var(--accent-line) inset}
+  .card.unfit{opacity:.72}
+  .rowtop{display:flex; align-items:center; gap:8px; flex-wrap:wrap}
+  .district{
+    font-weight:700; font-size:.85rem; color:var(--accent);
+    background:var(--accent-soft); padding:2px 10px; border-radius:6px;
+  }
+  .flag{
+    font-size:.74rem; padding:2px 8px; border-radius:6px; letter-spacing:.02em;
+    background:var(--accent); color:#fff;
+  }
+  .flag.warn{background:var(--warn-soft); color:var(--warn); border:1px solid var(--warn)}
+  .flag.dim{background:transparent; color:var(--dim); border:1px solid var(--line)}
+  .title{font-size:1.02rem; font-weight:600; margin:0; line-height:1.45; text-wrap:balance}
+  .price{font-size:1.35rem; font-weight:700; font-variant-numeric:tabular-nums; letter-spacing:.01em}
+  .price small{font-size:.8rem; font-weight:400; color:var(--muted); margin-left:2px}
+  .meta{
+    display:flex; flex-wrap:wrap; gap:6px 18px; font-size:.86rem; color:var(--muted);
+    border-top:1px solid var(--line); padding-top:10px;
+  }
+  .meta b{color:var(--ink); font-weight:600; font-variant-numeric:tabular-nums}
+  .note{font-size:.86rem; color:var(--muted); margin:0}
+  .note.caution{color:var(--warn)}
+  .go{
+    margin-top:auto; align-self:flex-start;
+    font-size:.86rem; font-weight:600; text-decoration:none;
+    color:var(--accent); border:1px solid var(--accent-line); border-radius:8px;
+    padding:6px 14px;
+  }
+  .go:hover{background:var(--accent-soft)}
+  .go:focus-visible{outline:2px solid var(--accent); outline-offset:2px}
+  section h2{font-size:1.05rem; margin:36px 0 12px}
+  .notes{font-size:.86rem; color:var(--muted); padding-left:1.2em; margin:0; display:flex; flex-direction:column; gap:8px}
+  footer{margin-top:34px; font-size:.78rem; color:var(--muted); border-top:1px solid var(--line); padding-top:14px}
+</style>
+<div class="wrap">
+  <header>
+    <h1>新北市住辦／商辦出租物件評估</h1>
+    <p class="sub">591 商用不動產＋租屋站　·　2026-07-13 抓取　·　同日 8 筆全數進詳情頁核實格局</p>
+    <div class="chips">
+      <span class="chip">新北市</span>
+      <span class="chip">住商混合／商辦</span>
+      <span class="chip">18–24 坪（±可收）</span>
+      <span class="chip">2 房或可隔 2 獨立空間</span>
+      <span class="chip">只租不買</span>
+    </div>
+    <p class="summary">
+      8 筆已全數逐筆核實（2026-07-13，全部在架）：<b>現成 2 房 3 筆</b>、開放式可隔 <b>2</b> 筆、
+      詳情無格局資料 <b>1</b> 筆、格局不符 <b>2</b> 筆。租金 <b>20,000–37,000</b> 元/月。
+    </p>
+  </header>
+
+  <div class="grid">
+    <div class="card best">
+      <div class="rowtop"><span class="district">五股區</span><span class="flag">已有2房✓</span></div>
+      <p class="title">洲子洋 令荷園社區 住辦 2 房</p>
+      <div class="price">26,800<small>元/月</small></div>
+      <div class="meta">
+        <span>坪數 <b>20.96</b> 坪</span><span>格局 <b>2房1廳1衛1陽台</b></span><span>樓層 <b>5F/19F</b> 電梯</span>
+      </div>
+      <p class="note">詳情頁格局欄核實。登記住辦（集合住宅用途），管理費 1,878 元/月，最短租期一年——合規住辦＋現成 2 房，綜合最穩。</p>
+      <a class="go" href="https://rent.591.com.tw/rent-detail-21568464.html" target="_blank" rel="noopener">在 591 開啟</a>
+    </div>
+
+    <div class="card best">
+      <div class="rowtop"><span class="district">中和區</span><span class="flag">已有2房✓</span></div>
+      <p class="title">捷運公車機能佳 室內空間大 住辦兩用</p>
+      <div class="price">27,000<small>元/月</small></div>
+      <div class="meta">
+        <span>坪數 <b>24.5</b> 坪</span><span>格局 <b>2房2廳1衛2陽台</b></span><span>樓層 <b>3F/13F</b></span>
+      </div>
+      <p class="note">詳情頁格局欄核實。全批坪數最大的現成 2 房，每坪租金最低，性價比最佳。</p>
+      <a class="go" href="https://rent.591.com.tw/rent-detail-21282861.html" target="_blank" rel="noopener">在 591 開啟</a>
+    </div>
+
+    <div class="card best">
+      <div class="rowtop"><span class="district">板橋區</span><span class="flag">已有2房✓</span></div>
+      <p class="title">1+2 樓全新裝潢 住店辦皆可</p>
+      <div class="price">37,000<small>元/月</small></div>
+      <div class="meta">
+        <span>坪數 <b>19.97</b> 坪</span><span>格局 <b>2房2廳2衛1陽台</b></span><span>樓層 <b>1–2F</b> 雙層</span>
+      </div>
+      <p class="note">詳情頁核實：2 樓客廳＋2 個小房間、1 樓可當辦公室——「樓下辦公、樓上兩房」天然分區，租金全批最高。</p>
+      <a class="go" href="https://rent.591.com.tw/rent-detail-21610309.html" target="_blank" rel="noopener">在 591 開啟</a>
+    </div>
+
+    <div class="card">
+      <div class="rowtop"><span class="district">汐止區</span><span class="flag warn">開放式可隔⚠️</span><span class="flag warn">刊登 7/18 到期</span></div>
+      <p class="title">近汐止車站 低樓層十字路口邊間住辦</p>
+      <div class="price">20,000<small>元/月</small></div>
+      <div class="meta">
+        <span>坪數 <b>20</b> 坪</span><span>格局 <b>開放式</b>（詳情頁描述）</span><span>樓層 <b>2F/4F</b></span>
+      </div>
+      <p class="note caution">全批租金最低，但現況開放式——要 2 房得自付隔間（輕隔間兩房行情估 8–15 萬，現場再估）。刊登只到 7/18，要看要快。</p>
+      <a class="go" href="https://rent.591.com.tw/rent-detail-21139534.html" target="_blank" rel="noopener">在 591 開啟</a>
+    </div>
+
+    <div class="card">
+      <div class="rowtop"><span class="district">永和區</span><span class="flag warn">開放式可隔⚠️</span></div>
+      <p class="title">捷運永安市場 台北金融天下 商辦</p>
+      <div class="price">35,000<small>元/月</small></div>
+      <div class="meta">
+        <span>坪數 <b>24</b> 坪</span><span>格局 <b>開放式・標可隔間</b>（工位 13–18 個）</span><span>樓層 <b>7F/19F</b></span>
+      </div>
+      <p class="note">捷運共構商辦、邊間雙面採光，詳情頁明標「可隔間」；門面最好，但隔間費同樣自付。</p>
+      <a class="go" href="https://business.591.com.tw/rent/21411095" target="_blank" rel="noopener">在 591 開啟</a>
+    </div>
+
+    <div class="card">
+      <div class="rowtop"><span class="district">土城區</span><span class="flag dim">格局資料不足⚪</span></div>
+      <p class="title">亞東家樂福 商辦住 一樓</p>
+      <div class="price">26,000<small>元/月</small></div>
+      <div class="meta">
+        <span>坪數 <b>24.6</b> 坪</span><span>格局 <b>詳情頁亦無資料</b></span><span>樓層 <b>1F/5F</b>（含 B1 使用約 52 坪）</span>
+      </div>
+      <p class="note">列表與詳情頁都沒有格局欄與格局圖，只知含地下室使用面積大；有興趣只能現場確認。</p>
+      <a class="go" href="https://business.591.com.tw/rent/21070373" target="_blank" rel="noopener">在 591 開啟</a>
+    </div>
+
+    <div class="card unfit">
+      <div class="rowtop"><span class="district">新店區</span><span class="flag dim">格局不符✕（1房）</span></div>
+      <p class="title">新店區公所站 500m 稀有低樓層戶</p>
+      <div class="price">24,000<small>元/月</small></div>
+      <div class="meta">
+        <span>坪數 <b>22</b> 坪</span><span>格局 <b>1房1廳1衛1陽台</b></span><span>樓層 <b>2F/4F</b></span>
+      </div>
+      <p class="note">詳情頁核實現況 1 房（描述稱可自由規劃，但改成 2 房要動格局）。不符核心條件，列出供參。</p>
+      <a class="go" href="https://rent.591.com.tw/rent-detail-21623077.html" target="_blank" rel="noopener">在 591 開啟</a>
+    </div>
+
+    <div class="card unfit">
+      <div class="rowtop"><span class="district">三重區</span><span class="flag dim">格局不符✕（1房）</span></div>
+      <p class="title">交通方便 住辦合宜</p>
+      <div class="price">32,000<small>元/月</small></div>
+      <div class="meta">
+        <span>坪數 <b>24</b> 坪</span><span>格局 <b>1房1廳1衛1陽台</b></span><span>樓層 <b>8F/24F</b> 電梯</span>
+      </div>
+      <p class="note">詳情頁核實：24 坪只隔 1 房。不符核心條件，列出供參。</p>
+      <a class="go" href="https://rent.591.com.tw/rent-detail-21490217.html" target="_blank" rel="noopener">在 591 開啟</a>
+    </div>
+  </div>
+
+  <section>
+    <h2>看屋前必讀</h2>
+    <ul class="notes">
+      <li><b>核實層級</b>：8 筆已於 2026-07-13 全數進 591 詳情頁核對格局、在架與租金（無下架、無調價）；格局判定均引詳情頁欄位或描述原文，未推測。</li>
+      <li><b>法定用途</b>：住辦物件權狀用途各異（住宅、一般事務所、乙工商辦都有可能），要做公司登記的，簽約前務必請房東或仲介出示建物謄本核對——工業宅辦公合法、住人違規，方向別搞反。</li>
+      <li><b>隔間成本</b>：開放式 2 筆若要隔出兩房，輕隔間行情約 8–15 萬（實際依現場放樣估價）。</li>
+      <li><b>涵蓋範圍</b>：本批取 591 商用站（住辦＋辦公）第一頁篩選結果；要更大樣本可擴大翻頁或放寬坪數。</li>
+    </ul>
+  </section>
+
+  <footer>資料來源：591 房屋交易網（business.591.com.tw／rent.591.com.tw）· 2026-07-13 抓取並逐筆核實 · 如菓內部評估用</footer>
+</div>
